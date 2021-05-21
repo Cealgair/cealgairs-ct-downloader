@@ -1,0 +1,11 @@
+	<style>
+		text{
+			font: 50px arial;
+			stroke: black;
+			stroke-width: 6;
+			paint-order: stroke;
+		}
+		.w{
+			fill: white;
+		}
+	</style>
