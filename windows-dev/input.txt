@@ -1,0 +1,7 @@
+#lines that begin with a hash sign are comments
+#if a line is made up of two hash signs, it is the beginning of a comment
+#this comment ends where the file ends or where a line is made up of three hash signs
+#lines that begin with an asterisk are settings
+#lines cannot be too long (199 characters max, and even then they might cause issues because the percent sign sometimes counts as three characters). This includes comments
+#for a more in-depth explanation see the readme
+3ds
