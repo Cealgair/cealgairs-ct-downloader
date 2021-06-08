@@ -1,0 +1,26 @@
+=== patch.bat ===
+This Batchfile will patch your LECODE Binarys
+
+== How to use it ==
+Open Commandprompt and run: patch.bat "<lecode definiton file here>" "<lpar here>"
+
+
+=== icons.bat ===
+This Batchfile will create the ct_icons.tpl file for you
+
+== How to use it ==
+Open Commandprompt and run: icons.bat "<png file of your cup icons here>"
+
+
+=== bmg.bat ===
+This Batchfile patches Common.bmg
+
+== How to use it ==
+Open Commandprompt and run: bmg.bat "<name of definiton file here>"
+
+
+=== builder.bat ===
+This Batchfile will create the definition file for you
+
+== How to use it ==
+Open Commandprompt and run: builder.bat "<name of definition file here>"
