@@ -30,9 +30,11 @@ Copyright (C) 2020-2021 Cealgair
   
   Now you'll need to edit three of the files provided with this toolser. "path-to-disc-root.txt" should contain the path to the directory we've called "new", ending with a /. Similarly, "path-to-wbz-converter.txt" should contain the path to the directory of WBZ Converter (the one that contains "convert-WBZ-to-SZS.sh" among other stuff). Also, "path-to-lecode-build.txt" should contain the path to the file "lecode-*.bin", where "*" can be "JAP", "KOR", "PAL" or "USA" depending on the version of the disc you have.
   
-  Finally, you'll probably need to give yourself the permission to execute the various programs. To do so, run the following command:
+  Then, you'll probably need to give yourself the permission to execute the various programs. To do so, run the following command:
   
-  chmod u+x autoremove bmg builder ct-downloader icons patch bin/generate-icons
+  chmod u+x autoremove bmg builder ct-downloader icons patch bin/generate-icons bin/icons-setup
+  
+  Finally, you will also need to run bin/icons-setup once.
   
   If you want to give the very same permissions to everyone that uses your computer, just replace "u+x" with "a+x".
   
