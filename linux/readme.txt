@@ -1,4 +1,18 @@
-CEALGAIR'S CT DOWNLOADER v. beta 2.2-1
+CEALGAIR'S CT DOWNLOADER v. beta 2.3
+Copyright (C) 2020-2021 Cealgair
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
  How to use
  ==========
@@ -134,6 +148,8 @@ CEALGAIR'S CT DOWNLOADER v. beta 2.2-1
  Report bugs, etc.
  =================
  
- First of all, check if you have the latest version. This includes versions made by other people that are modification of this toolser. If this is the latest version, then check if it is has already been listed at http://wiki.tockdom.com/wiki/Cealgair%27s_CT_Downloader. If it hasn't, keep reading this section.
+ First of all, check if you have the latest version. This includes versions made by other people that are modification of this toolset. If this is the latest version, then check if the bug is has already been listed at http://wiki.tockdom.com/wiki/Cealgair%27s_CT_Downloader. If it hasn't, keep reading this section.
  
- The preferred way of reporting stuff is to report it on the talk/discussion page of this toolser at http://wiki.tockdom.com/wiki/Cealgair%27s_CT_Downloader. If you don't have an account on the Wiiki and you don't want to make one, you can contact me on discord (cealgair#9784), but keep in mind that I don't check it very often.
+ The preferred way of reporting stuff is to report bugs on the talk/discussion page of this toolset at http://wiki.tockdom.com/wiki/Cealgair%27s_CT_Downloader. If you don't have an account on the Wiiki and you don't want to make one, you can contact me on discord (cealgair#9784), but keep in mind that I don't check it very often.
+ 
+ 
