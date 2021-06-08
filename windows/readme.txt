@@ -1,4 +1,18 @@
-CEALGAIR'S CT DOWNLOADER v. beta 2.2-1
+CEALGAIR'S CT DOWNLOADER v. beta 2.3-win
+Copyright (C) 2020-2021 Cealgair, Fynn93
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
  How to use
  ==========
@@ -16,9 +30,11 @@ CEALGAIR'S CT DOWNLOADER v. beta 2.2-1
   
   Now you'll need to edit three of the files provided with this toolser. "path-to-disc-root.txt" should contain the path to the directory we've called "new", ending with a /. Similarly, "path-to-wbz-converter.txt" should contain the path to the directory of WBZ Converter (the one that contains "convert-WBZ-to-SZS.sh" among other stuff). Also, "path-to-lecode-build.txt" should contain the path to the file "lecode-*.bin", where "*" can be "JAP", "KOR", "PAL" or "USA" depending on the version of the disc you have.
   
-  Finally, you'll probably need to give yourself the permission to execute the various programs. To do so, run the following command:
+  Then, you'll probably need to give yourself the permission to execute the various programs. To do so, run the following command:
   
-  chmod u+x autoremove bmg builder ct-downloader icons patch bin/generate-icons
+  chmod u+x autoremove bmg builder ct-downloader icons patch bin/generate-icons bin/icons-setup
+  
+  Finally, you will also need to run bin/icons-setup once.
   
   If you want to give the very same permissions to everyone that uses your computer, just replace "u+x" with "a+x".
   
@@ -94,7 +110,7 @@ CEALGAIR'S CT DOWNLOADER v. beta 2.2-1
   Usage of "icons"
   ----------------
   
-  This program creates the menu icons for your distribution. It keeps the original icons for the Nintendo cups, puts a dice as the icon for the Wiimm cup and puts the first three letters of the first track for every other cup. If you want it to behave differently, you can change its source code or make the icons manually.
+  This program creates the menu icons for your distribution. It keeps the original icons for the Nintendo cups, puts a die as the icon for the Wiimm cup and puts the first three letters of the first track for every other cup. If you want it to behave differently, you can change its source code or make the icons manually.
   
   Usage of "bmg"
   --------------
@@ -134,6 +150,8 @@ CEALGAIR'S CT DOWNLOADER v. beta 2.2-1
  Report bugs, etc.
  =================
  
- First of all, check if you have the latest version. This includes versions made by other people that are modification of this toolset. If this is the latest version, then check if it has already been listed at http://wiki.tockdom.com/wiki/Cealgair%27s_CT_Downloader. If it hasn't, keep reading this section.
+ First of all, check if you have the latest version. This includes versions made by other people that are modification of this toolset. If this is the latest version, then check if the bug is has already been listed at http://wiki.tockdom.com/wiki/Cealgair%27s_CT_Downloader. If it hasn't, keep reading this section.
  
- The preferred way of reporting stuff is to report it on the talk/discussion page of this toolset at http://wiki.tockdom.com/wiki/Cealgair%27s_CT_Downloader. If you don't have an account on the Wiiki and you don't want to make one, you can contact me on discord (cealgair#9784), but keep in mind that I don't check it very often.
+ The preferred way of reporting stuff is to report bugs on the talk/discussion page of this toolset at http://wiki.tockdom.com/wiki/Cealgair%27s_CT_Downloader. If you don't have an account on the Wiiki and you don't want to make one, you can contact me on discord (cealgair#9784), but keep in mind that I don't check it very often.
+ 
+ 
