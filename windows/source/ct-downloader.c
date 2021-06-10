@@ -501,7 +501,7 @@ void download_search_results(char a[]){
 	//download the search results
 	//definitely different on Windows
 	char wget_string[WGET_STRING_MAXLEN];
-	sprintf(wget_string,"wget -O \"%s\" --output-file=.garbage \"https://ct.wiimm.de/?t=1&s=%s\"",SEARCH_RESULTS_FILE,a);
+	sprintf(wget_string,".\\bin\\wget -O \"%s\" --output-file=.garbage \"https://ct.wiimm.de/?t=1&s=%s\"",SEARCH_RESULTS_FILE,a);
 	sleep(3);//we don't want to overload the server
 	system(wget_string);
 	system("rm .garbage");
@@ -1176,7 +1176,7 @@ void download_wbz(TRACK t,time_t schedule[]){
 	int i;
 	for(i=0;i<19;i++) schedule[i]=schedule[i+1];
 	printf("Downloading %s.wbz...\n\n",t.name);
-	sprintf(wget_string,"wget -O \"%s%s.wbz\" --output-file=.garbage \"https://ct.wiimm.de/d/@Y1kNEXdi/%u\"",WBZ_FILES_DIR,t.name,t.id);
+	sprintf(wget_string,".\\bin\\wget -O \"%s%s.wbz\" --output-file=.garbage \"https://ct.wiimm.de/d/@Y1kNEXdi/%u\"",WBZ_FILES_DIR,t.name,t.id);
 	sleep(3);//we don't want to overload the server
 	system(wget_string);
 	system("rm .garbage");
@@ -1242,7 +1242,7 @@ void download_info(TRACK t){
 		printf("\nDownloading info for %s...\n",t.name);
 		//get the info
 		//this part is probably different on Windows
-		sprintf(command,"wget -O \"%s%s\" --output-file=.garbage \"https://ct.wiimm.de/ajax/get-info?f=%u\"",INFO_FILES_DIR,t.name,t.id);
+		sprintf(command,".\\bin\\wget -O \"%s%s\" --output-file=.garbage \"https://ct.wiimm.de/ajax/get-info?f=%u\"",INFO_FILES_DIR,t.name,t.id);
 		sleep(3);//we don't want to overload the server
 		system(command);
 		system("rm .garbage");

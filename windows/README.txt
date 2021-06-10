@@ -68,23 +68,7 @@ CEALGAIR'S CT DOWNLOADER v. beta 2.2-1
   Usage of "builder"
   ------------------
   
-  This program allows you to make "CTFILE.txt" and "tracks.bmg.txt", the former being an essential file to make the whole thing work and the other being a precursor to the file containing all of the track names. It also makes "CTFILE.INTRO.txt" and "intro.bmg.txt", which are needed to make the messages that appear during the intro cameras of the tracks.
-  
-  "builder" tries to make all of the track names distinct for the menu by adding the author or the version or some extra information if the tracks have the same name. Once every track name is unique, they are sorted in alphabetical order.
-  
-  If you just ran "ct-downloader" and you already got all the CTs that you want, you can just run this program. Otherwise, keep reading this section.
-  
-  This program reads "filename-list.txt", which is created by "ct-downloader", and "other-filename-list.txt". If there are some tracks that you want to include in your distribution but are not on ct.wiimm.de (for example because they are texture hacks, or not officially released), you should put them in szs format into the folder calles "other-szs-files" and put all of their filenames into "other-filename-list.txt", without the ".szs" extensions and separated by line feeds.
-  
-  You'll also want to create an info file for each of those tracks in the directory "other-info-files". Check the ones in "info-files" after you run "ct-downloader" as an example.
-  
-  After all of that, you can run this program and get the "CTFILE.txt" and the "tracks.bmg.txt", with the similar files for the intro cameras.
-  
-  If there's a track that you don't want in the distribution anymore, you just need to delete his filename from "other-filename-list.txt".
-  
-  Known bug: I haven't figured out how to put the names of the Wiimm cup in "tracks.bmg.txt", so you'll have to do that manually.
-  
-  Known bug: I haven't figured out how to set the names of the Nintendo tracks properly in "tracks.bmg.txt" and "intro.bmg.txt", so you'll have to do that manually.
+  This program allows you to make "CTFILE.txt", the former being an essential file to make the whole thing work and the other being a precursor to the file containing all of the track names.
   
   Usage of "patch"
   ----------------
@@ -94,14 +78,14 @@ CEALGAIR'S CT DOWNLOADER v. beta 2.2-1
   Usage of "icons"
   ----------------
   
-  This program creates the menu icons for your distribution. It keeps the original icons for the Nintendo cups, puts a dice as the icon for the Wiimm cup and puts the first three letters of the first track for every other cup. If you want it to behave differently, you can change its source code or make the icons manually.
+  This Program creates and copies your cup icons directly into your MKW Game
   
   Usage of "bmg"
   --------------
   
-  This program patches the file containing all of the track names, according to what it finds in "tracks.bmg.txt" and  "intro.bmg.txt". You might want to fix the names of the Nintendo tracks and those of the Wiimm cup before running this program.
+  This program patches the file containing all of the track names, according to what it finds in "tracks.bmg.txt". You might want to fix the names of the Nintendo tracks and those of the Wiimm cup before running this program.
   
-  Build the iso
+  Build the ISO
   -------------
   
   When everything is done, you can create the iso for your distribution from the directory we called "new" using wit (again, check http://wiki.tockdom.com/wiki/Wiimms_ISO_Tools for how to do so).
@@ -109,18 +93,16 @@ CEALGAIR'S CT DOWNLOADER v. beta 2.2-1
   Usage of "autoremove"
   ------------------
   
-  This program allows you to automatically remove all of the files in the "szs-files" and "info-files" folders that are listed as unused in "log.txt". Before running this program, make sure to remove any lines in "log.txt" which list files that are currently unused but that you want to keep. I implemented this because hundreds of unused szs files can take up valuable space and are very tedious to manually remove.
+  This program allows you to automatically remove all of the files that ct-downloader created. I implemented this because hundreds of unused szs files can take up valuable space and are very tedious to manually remove.
   
-  Known bug: the program behaves weirdly when reading the last line of "log.txt", so keep it empty. Maybe even keep the final two lines empty. Note that, when "ct-downloader" automatically creates "log.txt", it already leaves a few empty lines at the end, so you don't really have to worry about it.
- 
  Source code
  ===========
  
  I have included the source code with this toolset. You can do whatever you want with it, but please contact me first. I know I stated in the readme of the previous version that I didn't plan to update this toolset, but this is no longer the case.
  
- Keep in mind that you cannot download more than 20 tracks in a single hour from ct.wiimm.de due to the anti-bot measures that are in place, so that's why I implemented the "brain" function in "ct-downloader". Also, you can technically reduce the three seconds of sleep, but you might want to talk with Wiimm beforehand. Also, if you make a Windows port or something, ask Wiimm if those three seconds of sleep are still ok or if they need to be increased, because I don't want to get in trouble with him.
+ Keep in mind that you cannot download more than 20 tracks in a single hour from ct.wiimm.de due to the anti-bot measures that are in place, so that's why I implemented the "brain" function in "ct-downloader". Also, you can technically reduce the three seconds of sleep, but you might want to talk with Wiimm beforehand.
  
- I tried to be sensible while writing the code, and I even put some comments, but if you need anything to understand it better feel free to contact me via the same ways listed below for reporting bugs.
+ I tried to be sensible while writing the code, and I even put some comments, but if you need anything to understand it better feel free to contact us via the same ways listed below for reporting bugs.
  
  Some cool things you could implement if you want to modify this toolset include:
  * implement a way to support groups of random tracks
@@ -136,4 +118,34 @@ CEALGAIR'S CT DOWNLOADER v. beta 2.2-1
  
  First of all, check if you have the latest version. This includes versions made by other people that are modification of this toolset. If this is the latest version, then check if it has already been listed at http://wiki.tockdom.com/wiki/Cealgair%27s_CT_Downloader. If it hasn't, keep reading this section.
  
- The preferred way of reporting stuff is to report it on the talk/discussion page of this toolset at http://wiki.tockdom.com/wiki/Cealgair%27s_CT_Downloader. If you don't have an account on the Wiiki and you don't want to make one, you can contact me on discord (cealgair#9784), but keep in mind that I don't check it very often.
+ The preferred way of reporting stuff is to report it on the talk/discussion page of this toolset at http://wiki.tockdom.com/wiki/Cealgair%27s_CT_Downloader. If you don't have an account on the Wiiki and you don't want to make one, you can contact Cealgair (cealgair#9784) or Fynn93 (Fynn#2867) on discord .
+ 
+ Usage of Batch files
+ ====================
+
+ === patch.bat ===
+ This Batchfile will patch your LECODE Binarys
+ 
+ == How to use it ==
+ Open Commandprompt and run: patch.bat "<lecode definiton file here>" "<lpar here>"
+ 
+
+ === icons.bat ===
+ This Batchfile will create the ct_icons.tpl file for you
+ 
+ == How to use it ==
+ Open Commandprompt and run: icons.bat "<png file of your cup icons here>"
+ 
+ 
+ === bmg.bat ===
+ This Batchfile patches Common.bmg
+ 
+ == How to use it ==
+ Open Commandprompt and run: bmg.bat "<name of definiton file here>"
+ 
+ 
+ === builder.bat ===
+ This Batchfile will create the definition file for you
+ 
+ == How to use it ==
+ Open Commandprompt and run: builder.bat "<name of definition file here>"
