@@ -1,6 +1,0 @@
-Example for path-to-disc-root.txt
-C:\Users\fynn\Downloads\cealgairs-ct-downloader-beta2.2-1\mkwii
-
-Example for path-to-lecode-build
-C:\Users\fynn\Downloads\cealgairs-ct-downloader-beta2.2-1\lecode
-In the lecode folder there must be the binarys
